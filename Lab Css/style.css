@@ -1,0 +1,35 @@
+body{
+   background: green;
+}
+.container{
+   background-color: rgb(213, 233, 213);
+}
+.div1{
+   border: 5px solid;
+   border-color: red;
+   color: cadetblue;
+}
+.div1 h3{
+    border: 5px solid;
+    border-color: orange;
+    
+}
+.div2{
+   border: 5px solid;
+   border-color: blue;
+   color:cadetblue;
+}
+.div2 span{
+   border: 3px solid;
+   border-color: rgb(82, 11, 82); 
+}
+.div3{
+   border: 5px solid;
+   border-color: blue;
+   color: cadetblue;
+}
+.div3 span{
+   border: 3px solid;
+   border-color:rgb(82, 11, 82);
+   
+}
