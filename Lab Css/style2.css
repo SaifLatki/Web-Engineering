@@ -1,0 +1,43 @@
+body{
+	background:url("https://courses.cs.washington.edu/courses/cse190m/09sp/labs/2-journal/images/background.gif")
+}
+.container{
+   background-color: white;
+   border: 5px solid green;
+   margin:0% 10%; 	
+}
+.div1{
+   border: 5px solid;
+   border-color: red;
+   color: cadetblue;
+}
+.div1 h3{
+    border: 5px solid;
+    border-color: orange;
+    
+}
+.div2{
+   border: 5px solid;
+   border-color: blue;
+   background-color: #E8FBFB;
+   color:cadetblue;
+   padding:5px;
+   margin-top:10px;
+}
+.div2 span{
+   border: 3px solid;
+   border-color: rgb(82, 11, 82); 
+}
+.div3{
+   border: 5px solid;
+   border-color: blue;
+    background-color: #E8FBFB;
+   color: cadetblue;
+   padding:5px;
+   margin-top:10px;
+}
+.div3 span{
+   border: 3px solid;
+   border-color:rgb(82, 11, 82);
+   
+}
