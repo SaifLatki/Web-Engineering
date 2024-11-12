@@ -76,16 +76,21 @@ header{
     background-position: cover;
     height: 100%;
 }
-.products .button{
-    width: 50px;
-    padding: 5px 0;
-}
-.button{
-    padding: 10px ; 
+.products .button {
+    width: 100%;
+    margin-top: 80px;
+    padding: 10px ;
+    display: flex;
     justify-content: center;
+}
+.button button {
+    padding: 10px 20px;
+    border-radius: 10px;
     background-color: #7f7575;
     color: white;
-    
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .card .price {
     width: 100%;
