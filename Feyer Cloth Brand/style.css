@@ -127,3 +127,58 @@ header{
     color:white;
     background-color:#7f7575;
 }
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(132, 167, 161);
+    height: 100%;
+    width: 100%;
+}
+.footer1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.footer2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer2 h2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+.footer2 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+    gap: 20px;
+}
+.footer ul li{ 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer3{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+}
+.footer3 ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+}
