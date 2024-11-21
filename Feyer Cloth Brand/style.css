@@ -232,6 +232,71 @@ header{
     margin: 0;
 }
 
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: #7f7575;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Values Section */
+.values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.value-card {
+    flex: 1 1 calc(33.333% - 40px);
+    background: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.value-card h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #28525e;
+}
+
+.value-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* About page styling */
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer {
@@ -402,5 +467,6 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+
 
 
