@@ -265,7 +265,7 @@ header{
 
 .value-card {
     flex: 1 1 calc(33.333% - 40px);
-    background: #f8f8f8;
+    background: #b0a0a0;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
@@ -293,6 +293,7 @@ header{
 
 .value-card:hover {
     transform: translateY(-10px);
+    
 }
 
 
