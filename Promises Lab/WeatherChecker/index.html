@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Checker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #454760, #3e3f52);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .weather {
+            display:flex ;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 400px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #ff7e5f;
+            border: none;
+            border-radius: 4px;
+            width: 50%;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #feb47b;
+        }
+
+        #forecast {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: none;
+        }
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 400px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            input, button {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            input, button {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="weather">
+        <h1>Weather Checker</h1>
+        <label for="location">Location</label>
+        <input type="text" id="city" placeholder="Enter city or area">
+        <button id="submit">Get Weather</button>
+        <div id="forecast">Forecast data will appear here.</div>
+    </div>
+
+    <div class="textBox" id="text">
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
