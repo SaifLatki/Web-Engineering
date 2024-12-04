@@ -23,36 +23,36 @@ header{
     gap: 40px ;
 }
 .middle ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #dbcece; /* Default text color */
+    text-decoration: none; 
+    color: #dbcece; 
     font-size: 16px;
     font-family: 'Arial', sans-serif;
-    padding: 8px 12px; /* Add padding for a clickable area */
-    border-radius: 5px; /* Rounded corners */
-    transition: all 0.3s ease-in-out; /* Smooth transitions */
+    padding: 8px 12px; 
+    border-radius: 5px; 
+    transition: all 0.3s ease-in-out; 
 }
 
 .middle ul li a:hover {
-    color: white; /* Change text color on hover */
-    background-color: #7f7575; /* Add a background color on hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
+    color: white; 
+    background-color: #7f7575; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .middle ul li a:active {
-    background-color: #4a4141; /* Darker background when clicked */
-    transform: scale(0.95); /* Slightly shrink the button */
+    background-color: #4a4141;
+    transform: scale(0.95); 
 }
 
 /* Responsive adjustments for small screens */
 @media (max-width: 768px) {
     .middle ul {
-        flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Increase spacing between items */
+        flex-direction: column; 
+        gap: 20px; 
     }
 
     .middle ul li a {
-        font-size: 14px; /* Adjust text size for smaller screens */
-        padding: 6px 10px; /* Adjust padding */
+        font-size: 14px; 
+        padding: 6px 10px; 
     }
 }
 
@@ -171,14 +171,14 @@ header{
     align-items: flex-start;
     background-color: #28525e;
     color: #ffffff;
-    padding: 40px 20px;
-    gap: 20px;
+    padding: 20px 10px;
+    gap: 10px;
 }
 
 .footer-section {
     flex: 1;
     min-width: 200px;
-    margin: 10px;
+
 }
 
 .footer-section h2 {
@@ -216,7 +216,6 @@ header{
 
 .footer-section.logo p {
     font-size: 0.9em;
-    margin-top: 5px;
     color: #c3e5f0;
 }
 
@@ -228,9 +227,6 @@ header{
     font-size: 0.9em;
 }
 
-.footer-bottom p {
-    margin: 0;
-}
 
 
 /* Hero Section */
