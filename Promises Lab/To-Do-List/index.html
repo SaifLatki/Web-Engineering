@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #4b79a1, #283e51);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 0 15px;
+        }
+    
+        .todo {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            padding: 30px 50px;
+            max-width: 500px;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+            backdrop-filter: blur(10px);
+        }
+    
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #e3e3e3;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    
+        #form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    
+        input[type="text"] {
+            padding: 12px;
+            width: 100%;
+            max-width: 70%;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    
+        button {
+            background-color: #56b4d3;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+    
+        button:hover {
+            background-color: #4a99b4;
+            transform: scale(1.05);
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+    
+        li {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+    
+        li:hover {
+            transform: scale(1.02);
+        }
+    
+        li span {
+            font-size: 18px;
+            color: #e3e3e3;
+            flex: 1;
+            text-align: left;
+            word-break: break-word;
+        }
+    
+        li button {
+            background: #a46c6c;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+    
+        li button:hover {
+            background-color: #523939;
+            transform: scale(1.1);
+        }
+    
+        @media (max-width: 600px) {
+            .todo {
+                padding: 20px 30px;
+            }
+    
+            input[type="text"] {
+                max-width: 100%;
+                font-size: 14px;
+            }
+    
+            button {
+                font-size: 14px;
+                padding: 10px 16px;
+            }
+    
+            h1 {
+                font-size: 26px;
+            }
+    
+            li span {
+                font-size: 16px;
+            }
+    
+            li button {
+                padding: 6px 12px;
+            }
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="todo">
+        <h1>To-Do List</h1>
+        <form id="form">
+            <input type="text" id="task" placeholder="Enter task...">
+            <button id="btnAdd" type="submit">Add Task</button>
+        </form>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
