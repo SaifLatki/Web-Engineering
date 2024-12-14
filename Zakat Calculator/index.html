@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final-Lab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Make a zakat calculator -->
+    <div class="container">
+      <h2>Nisab threshold</h2>
+      <hr />
+      <div class="nisab">
+        <div>
+          <input type="radio" name="nisab" id="gold" />
+          <label for="gold">Value of Gold (approximately Rs. 1,473,000)</label>
+        </div>
+        <div>
+          <input type="radio" name="nisab" id="silver" />
+          <label for="silver"
+            >Value of Silver (approximately Rs. 114,713)</label
+          >
+        </div>
+      </div>
+      <h2>Cash</h2>
+      <hr />
+      <div class="cash">
+        <div>
+          <label for="hand">Cash in hand & in bank accounts</label>
+          <input type="number" name="cash" id="hand" placeholder="RS." />
+        </div>
+        <div>
+          <label for="haj">Cash deposited for future like eg.Hajj</label>
+          <input type="number" name="cash" id="haj" placeholder="RS." />
+        </div>
+        <div>
+          <label for="loan">Cash Given out in loans</label>
+          <input type="number" name="cash" id="loan" placeholder="RS." />
+        </div>
+        <div>
+          <label for="Investments">Investments, shares , saving, etc</label>
+          <input type="number" name="cash" id="Investments" placeholder="RS." />
+        </div>
+      </div>
+
+      <h2>Gold & Silver</h2>
+      <hr />
+      <div class="goldsilver">
+        <div>
+          <label for="havinggold">value of Gold you possses</label>
+          <input
+            type="number"
+            name="goldsilver"
+            id="havinggold"
+            placeholder="RS."
+          />
+        </div>
+        <div>
+          <label for="havingsilver"
+            >Cash deposited for future like eg.Hajj</label
+          >
+          <input
+            type="number"
+            name="goldsilver"
+            id="havingsilver"
+            placeholder="RS."
+          />
+        </div>
+      </div>
+
+      <h2>Liabilities</h2>
+      <hr />
+      <div class="liabilities">
+        <div>
+          <label for="borrow">Borrowed Money, goods</label>
+          <input
+            type="number"
+            name="liabilities"
+            id="borrow"
+            placeholder="RS."
+          />
+        </div>
+        <div>
+          <label for="wages">wages due to employees</label>
+          <input
+            type="number"
+            name="liabilities"
+            id="wages"
+            placeholder="RS."
+          />
+        </div>
+        <div>
+          <label for="taxes">Taxes , rent, utilities</label>
+          <input
+            type="number"
+            name="liabilities"
+            id="taxes"
+            placeholder="RS."
+          />
+        </div>
+      </div>
+
+      <h2>Total Networth</h2>
+      <h2 id="totalNetworth" style="color: #00796b">RS 0</h2>
+      <h2>Zakat payable</h2>
+      <h2 id="totalZakat" style="color: #00796b">RS 0</h2>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <button
+          id="calculateZakat"
+          style="
+            background-color: #00796b;
+            padding: 10px;
+            width: 50%;
+            color: white;
+            border: none;
+          "
+        >
+          Give your Zakat
+        </button>
+      </div>
+    </div>
+    <script src="script.js">
+    
+    </script>
+  </body>
+</html>

@@ -23,3 +23,5 @@ function getWeather() {
 }
 
 button.addEventListener('click', getWeather);
+
+

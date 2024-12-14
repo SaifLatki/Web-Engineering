@@ -1,0 +1,58 @@
+
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #387536;
+      }
+
+      .container {
+        width: 400px;
+        min-height: 100vh;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+      }
+
+      .nisab,
+      .cash,
+      .goldsilver,
+      .liabilities {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .cash > div,
+      .goldsilver > div,
+      .liabilities > div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      input[type="number"] {
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid #b2ebf2;
+        outline: none;
+      }
+
+      .liabilities > div > input {
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid #b2ebf2;
+        outline: none;
+ }

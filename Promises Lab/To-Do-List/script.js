@@ -74,5 +74,5 @@ addTaskButton.addEventListener("click", () => {
         taskInput.value = "";
     }
 });
-
+ 
 loadInitialTasks();
